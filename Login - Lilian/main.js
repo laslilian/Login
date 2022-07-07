@@ -19,8 +19,11 @@ function validate() {
     }
 
 // Tentativas
+    var t = "tentativas";
+    if ( count == 1) { t = "tentativas"}
+
     if (count >= 1) {
-    alert ("Dados incorretos, tente novamente");
+    alert ("Dados incorretos. Você tem " + count + " tentativas restantes...");
     count --;
 }
 
